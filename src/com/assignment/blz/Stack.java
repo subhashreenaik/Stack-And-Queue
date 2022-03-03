@@ -13,6 +13,9 @@ public class Stack {
 		* PROCEDURE
 		* 1. Creating Linked list
 		* 2. pushing values to stack
+		* 3.Displaying the stack
+		* 4.poping element from the stack
+		* 5.peeking element from the stack
 		*/
 		
 		/*
@@ -30,7 +33,22 @@ public class Stack {
 		/*
 		 * 3.Displaying the stack
 		 */
-		list.print();
+		list.print(list.head);
+		
+
+		/*
+		 * 4.poping element from the stack
+		 */
+		
+		Node x= list.pop(list.head);
+	    list.print(list.pop(list.head));
+	    
+	    /*
+		 * 5.peeking element from the stack
+		 */
+	    
+	    list.peek(list.head);
+	    
 		
 	}
 
