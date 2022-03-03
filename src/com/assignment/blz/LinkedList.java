@@ -8,6 +8,7 @@ public class LinkedList {
 	* pop - this method is deleting the first element from the stack
 	* peek -this method showing the top of the stack
 	* append-this metod is used to append data in queue
+	* dequeu- This method is used to remove the first element from queue
 	* 
 	*/
 	Node head;
@@ -69,6 +70,18 @@ public class LinkedList {
             last = last.next;
         last.next = new_node;
         return;
+    }
+	public Node  dequeue(Node head)
+    {
+		 if (head == null)
+	       System.out.println("There is nothing to delete");
+      
+		 else{
+			 head = head.next;
+			 
+		 }
+		return head;
+ 
     }
 	
 
