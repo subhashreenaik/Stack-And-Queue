@@ -6,6 +6,8 @@ public class LinkedList {
 	/**
 	* push - this method is creating to add data to linkedList
 	* pop - this method is deleting the first element from the stack
+	* peek -this method showing the top of the stack
+	* append-this metod is used to append data in queue
 	* 
 	*/
 	Node head;
@@ -51,6 +53,23 @@ public class LinkedList {
           }
           
         }
-    
+	public void append(int new_data)
+    {
+        
+        Node new_node = new Node(new_data);
+        if (head == null)
+        {
+            head = new Node(new_data);
+        }
+        
+        
+        new_node.next = null;
+        Node last = head;
+        while (last.next != null)
+            last = last.next;
+        last.next = new_node;
+        return;
+    }
+	
 
 }
